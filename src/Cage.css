@@ -1,0 +1,10 @@
+.cage {
+    width: 200px;
+    height: 200px;
+    border: solid 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
