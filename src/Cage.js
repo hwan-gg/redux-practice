@@ -12,7 +12,7 @@ function Cage( props ) {
         <div className="cage"> 
             { animal } 
             <Button type="primary" onClick={() => {
-                dispatch(actions.cage[`replaceCage${props.cageNum}`]);
+                dispatch(actions.cage[`replaceCage${props.cageNum}`](animal));
             }} danger> Change </Button>
         </div>
         

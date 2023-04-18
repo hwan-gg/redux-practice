@@ -2,10 +2,42 @@ import { createActions } from "redux-actions";
 
 const actions = createActions({
     CAGE : {
-        REPLACE_CAGE1 : () => console.log("Meow"),
-        REPLACE_CAGE2 : () => console.log("Ssss"),
-        REPLACE_CAGE3 : () => console.log("Oooh"),
-        REPLACE_CAGE4 : () => console.log("Mooo")
+        REPLACE_CAGE1 : (animal) => {
+            if(animal === "🐈") {
+                console.log("Meow");
+                return "🐅";
+            } else {
+                console.log("Roar");
+                return "🐈";
+            }
+    },
+        REPLACE_CAGE2 : (animal) => {
+            if(animal === "🐍") {
+                console.log("Ssss");
+                return "🐉";
+            } else {
+                console.log("Rawr");
+                return "🐍";
+            }
+    },
+        REPLACE_CAGE3 : (animal) => {
+            if(animal === "🐒") {
+                console.log("Oooo");
+                return "🦍";
+            } else {
+                console.log("Oooh");
+                return "🐒";
+            }
+    },
+        REPLACE_CAGE4 : (animal) => {
+            if(animal === "🐄") {
+                console.log("Mooo");
+                return "🐃";
+            } else {
+                console.log("MMoo");
+                return "🐄";
+            }
+        }
     }
 });
 

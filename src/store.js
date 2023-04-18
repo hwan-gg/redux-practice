@@ -9,28 +9,28 @@ export const initialState = {
 };
 
 const reducer = typeToReducer({
-    [actions.cage.replaceCage1] : (state) => {
+    [actions.cage.replaceCage1] : (state, action) => {
         return {
             ...state,
-            cage1 : "🐅",
+            cage1 : action.payload,
         };
     },
-    [actions.cage.replaceCage2] : (state) => {
+    [actions.cage.replaceCage2] : (state, action) => {
         return {
             ...state,
-            cage2 : "🐉",
+            cage2 : action.payload,
         };
     },
-    [actions.cage.replaceCage3] : (state) => {
+    [actions.cage.replaceCage3] : (state, action) => {
         return {
             ...state,
-            cage3 : "🦍",
+            cage3 : action.payload,
         };
     },
-    "REPLACE_CAGE4" : (state) => {
+    [actions.cage.replaceCage4] : (state, action) => {
         return {
             ...state,
-            cage4 : "🐃",
+            cage4 : action.payload,
         };
     },
 }, initialState);
