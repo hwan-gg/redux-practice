@@ -1,2 +1,3 @@
-# redux-practice
-practicing using redux library
+## To run project
+
+npm start
